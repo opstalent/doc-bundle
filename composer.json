@@ -1,0 +1,67 @@
+{
+  "name" : "opstalent/apibundle",
+  "description" : "Basic RESTful api bundle + oauth2",
+  "type" : "symfony-bundle",
+  "authors" : [
+    {
+      "name" : "Szymon Kunowski",
+      "email" : "szymon.kunowski@opstalent.it",
+      "homepage": "https://github.com/auamarto"
+    },
+    {
+      "name" : "Tomasz Piasecki",
+      "email" : "tomasz.piasecki@opstalent.it",
+      "homepage": "https://github.com/Mojihito"
+    },
+    {
+      "name" : "Patryk Grudniewski",
+      "email" : "patgrudniewski@gmail.com",
+      "homepage": "https://github.com/patgrudniewski"
+    }
+  ],
+  "keywords" : [
+    "api", "restful", "symfony 3", "redis", "elasticsearch"
+  ],
+  "license" : [
+    "MIT"
+  ],
+  "require" : {
+    "doctrine/orm": "^2.5",
+    "friendsofsymfony/oauth-server-bundle": "^1.5",
+    "friendsofsymfony/user-bundle": "~2.0@dev",
+    "symfony/form": "^3.2",
+    "symfony/serializer": "^3.2",
+    "symfony/security": "^3.2",
+    "symfony/event-dispatcher": "^3.2",
+    "symfony/property-access": "^3.2",
+    "symfony/http-foundation": "^3.2",
+    "symfony/http-kernel": "^3.2",
+    "symfony/routing": "^3.2",
+    "doctrine/annotations": "^1.4",
+    "symfony/dependency-injection": "^3.2"
+  },
+  "require-dev" : {
+    "phpunit/phpunit": "^5.7",
+    "mockery/mockery": "^0.9.9"
+  },
+  "suggest": {
+    "friendsofsymfony/oauth-server-bundle": "^1.5",
+    "friendsofsymfony/user-bundle": "~2.0@dev"
+  },
+  "autoload" : {
+    "psr-0" : {
+      "Opstalent\\ApiBundle" : ""
+    },
+    "psr-4": {
+      "Opstalent\\ApiBundle\\" : ""
+    },
+    "exclude-from-classmap": [
+      "/Tests/"
+    ]
+  },
+  "repositories" : [{
+    "type" : "vcs",
+    "url" : "https://github.com/opstalent/api-bundle.git"
+  }]
+
+}
