@@ -53,11 +53,11 @@ class ApiDocExtractor extends BaseExtractor
                             "authenticationRoles" => is_array($security) && array_key_exists('roles', $security) ? $security['roles'] : [],
                             "input" => $route->getOption('form'),
                             "filters" => (count($route->getMethods()) == 1 && $route->getMethods()[0] === "GET" && !$route->getRequirement('id')) ? [
-                                ["name" => "offset", "Type" => "integer"],
-                                ["name" => "limit", "Type" => "integer"],
-                                ["name" => "orderBy", "Type" => "string"],
-                                ["name" => "order", "Type" => "string"],
-                                ["name" => "count", "Type" => "bool"],
+                                ["name" => "filter[offset]", "Type" => "integer"],
+                                ["name" => "filter[limit]", "Type" => "integer"],
+                                ["name" => "filter[orderBy]", "Type" => "string"],
+                                ["name" => "filter[order]", "Type" => "string"],
+                                ["name" => "filter[count]", "Type" => "bool"],
                             ] : [],
                             'parameters' => [],
                             'requirements' => []
