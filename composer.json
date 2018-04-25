@@ -1,5 +1,5 @@
 {
-  "name" : "opstalent/docbundle",
+  "name" : "ops-talent/docbundle",
   "description" : "nelmio doc extractor modification",
   "type" : "symfony-bundle",
   "authors" : [
